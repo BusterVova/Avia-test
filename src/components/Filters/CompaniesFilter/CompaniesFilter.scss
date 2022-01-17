@@ -1,0 +1,25 @@
+.companiesFilter-block {
+  padding-top: 2em;
+  &_header {
+    margin-bottom: 1em;
+  }
+  &_inputs {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+}
+.input-block {
+  display: flex;
+  align-items: baseline;
+  &_filter_company-name {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0.3em;
+  }
+  &_divider {
+    margin: 0 0.2em 0 0.2em;
+  }
+}

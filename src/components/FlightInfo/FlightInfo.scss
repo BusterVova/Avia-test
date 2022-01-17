@@ -1,0 +1,77 @@
+.flight-info {
+  padding: 0.5em 0 0.5em 0;
+}
+.flight {
+  height: auto;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+
+  &-cities {
+    text-align: justify;
+  }
+
+  &-company {
+    padding: 0 0 0.5em 0.5em;
+  }
+
+  &-time {
+    margin: 0 1em 0 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  &-route {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &-arrival {
+    padding-left: 0.5em;
+  }
+
+  &-transfers {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    > span {
+      position: relative;
+      display: inline-block;
+      color: #ffb167;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 1px;
+        background: grey;
+      }
+
+      &:before {
+        right: 100%;
+        margin-right: 1em;
+      }
+
+      &:after {
+        left: 100%;
+        margin-left: 1em;
+      }
+    }
+  }
+}
+.blue-content {
+  margin-left: 0.2em;
+  color: rgb(10, 177, 177);
+}
+
+.arrow {
+  margin: 0 0.5em 0 0.5em;
+}
+
+.clock-icon {
+  margin-right: 0.2em;
+}

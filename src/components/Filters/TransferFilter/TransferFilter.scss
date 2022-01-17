@@ -1,0 +1,11 @@
+.transferFilter-block {
+  padding-top: 2em;
+  &_header {
+    margin-bottom: 1em;
+  }
+  &_inputs {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+}
